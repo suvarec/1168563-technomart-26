@@ -20,15 +20,26 @@ a {
   text-decoration: none;
 }
 
-.header-upper-field {
+.header-main {
   display: flex;
-  width: 100%;
+  padding: 0;
+  width: 941px;
   min-height: 41px;
+  box-sizing: border-box;
   color: #ffffff;
   background-color: #32425C;
 }
 
-.header-upper-field-list {
+.index-logo {
+  display: block;
+  width: 210px;
+  height: 42px;
+  color: #ffffff;
+  background-color: red;
+
+}
+
+.header-main-field-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -37,7 +48,7 @@ a {
   min-height: auto;
 }
 
-.header-middle-field {
+.header-info {
   display: flex;
   justify-content: space-between;
   width: 941px;
