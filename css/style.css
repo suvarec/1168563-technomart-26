@@ -2,14 +2,21 @@ html,
 body {
   margin: 0;
   padding: 0;
-}
-
-body {
-  font-family: Cuprum, PT Sans, sans-serif;
-  font-style: normal;
   width: 1200px;
   height: 3151px;
-  background-image: url('img/index.jpg');
+  font-family: Cuprum, PT Sans, sans-serif;
+  font-size: 13px;
+}
+
+/*body {
+  background: url("../img/index.jpg") no-repeat;
+  opacity: 0.5;
+}*/
+
+header {
+  margin: 0;
+  padding: 0;
+  background-color: #F2F2F2;
 }
 
 ul {
@@ -22,48 +29,37 @@ a {
 
 .header-main {
   display: flex;
-  padding: 0;
-  width: 941px;
-  min-height: 41px;
-  box-sizing: border-box;
-  color: #ffffff;
-  background-color: #32425C;
-}
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-.index-logo {
-  display: block;
-  width: 210px;
-  height: 42px;
-  color: #ffffff;
-  background-color: red;
-
+  width: auto;
+  min-height: auto;
+  background-color: aquamarine;
 }
 
 .header-main-field-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  text-align: center;
-  width: 941px;
-  min-height: auto;
 }
 
 .header-info {
   display: flex;
-  justify-content: space-between;
-  width: 941px;
+  justify-content: space-around;
 }
 
-.site-navigation-list {
-  display: flex;
-  justify-content: space-between;
-  width: 941px;
+.company-contacts {
+  align-items: end;
 }
 
 .registration {
   display: flex;
   justify-content: space-between;
-  width: 283px
+}
+
+.site-navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .visually-hidden {
@@ -73,8 +69,6 @@ a {
   margin: -1px;
   border: 0;
   padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
