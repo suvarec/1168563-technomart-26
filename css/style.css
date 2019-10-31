@@ -5,10 +5,11 @@ body {
 }
 
 body {
-  font-family: Cuprum, PT Sans, sans-serif;
-  font-style: normal;
   width: 1200px;
   height: 3151px;
+  font-family: Cuprum, PT Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
 }
 
@@ -149,27 +150,80 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 60px 0 0 0;
-  padding: 0;
-  }
 
-.popular-products {
+  margin: 60px 20px 20px 0;
   width: 941px;
-  height: 427px;
+  font-size: 16px;
 }
 
-.popular-products-block1 {
-  width: 941px;
-  height: 89px;
-  text-transform: uppercase;
-  background-color: #F9F6F1;
+.catalog-items .materials,
+.catalog-items .tool,
+.catalog-items .technics,
+.catalog-items .catalog-discount,
+.catalog-items .delivery {
+  position: relative;
+  width: 300px;
+  height: 123px;
+  color: white;
+  background-color: #FFBF47;
 }
 
-.popular-products-btn {
+
+
+.catalog-items .discount-delivery-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.discount-delivery-wrap .delivery {
+  margin-top: 20px;
+}
+
+.catalog-items-category {
+  margin: 11px 0;
+  padding: 0 24px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+
+.catalog-items-btn {
   display: inline-block;
-  width: 253px;
-  height: 38px;
-  background-color: #EF3644;
+  margin: 12px 24px;
+  padding: 12px 25px;
+  min-width: 47px;
+  font-size: 14px;
+  text-transform: uppercase;
 }
+
+/* Блок с иконками категорий. */
+.catalog-items img {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.catalog-items .tool {
+  background-color: #3BBCE3;
+}
+
+.catalog-items .technics {
+  background-color: #DD91D9;
+}
+
+.catalog-items .catalog-discount {
+  background-color: #8ED78E;
+}
+
+.catalog-items .delivery {
+  background-color: #FEC047;
+}
+
+
 
 
