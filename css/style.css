@@ -5,18 +5,18 @@ body {
 }
 
 body {
-  width: 1200px;
-  height: 3151px;
+  width: 100%;
+  height: 100%;
   font-family: Cuprum, PT Sans, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
 }
 
-/*body {
+/*body
 background: url("../img/index.jpg") no-repeat;
 opacity: 0.5;
-}*/
+} */
 
 ul {
   list-style: none;
@@ -266,7 +266,8 @@ header {
 }
 
 .popular-products-wrapper h2,
-.popular-producers-wrapper h2 {
+.popular-producers-wrapper h2
+{
   margin: 30px 30px ;
   font-size: 30px;
   text-transform: uppercase;
@@ -347,13 +348,60 @@ header {
 }
 
 .services-nav {
-  width: 240px;
+  margin: 73px 0 0 -40px;
 }
 
 .services-nav li {
+  display: block;
+  width: 150px;
+  padding: 10px 22px;
+  text-align: start;
   background-color: #32425C;
+  border-bottom: 1px solid #293448;
 }
 
 .delivery-wrapper {
-  float: left;
+  display: inline-block;
+  position: absolute;
+  top: 220px;
+  right: 600px;
 }
+
+.services img {
+  display: inline-block;
+  position: absolute;
+  top: 270px;
+  right: 220px;
+}
+
+.company-information {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services h2,
+.company-information h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.company-information p {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.company-information-btn {
+  display: inline-block;
+  margin: 26px 0 26px 664px ;
+  padding: 10px 30px 10px;
+  font-size: 14px;
+  background-color: #EF3644;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
