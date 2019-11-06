@@ -374,12 +374,6 @@ header {
   right: 220px;
 }
 
-.company-information {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 .services h2,
 .company-information h2 {
   font-style: normal;
@@ -395,11 +389,50 @@ header {
   line-height: 24px;
 }
 
-.company-information-btn {
-  display: inline-block;
-  margin: 26px 0 26px 664px ;
-  padding: 10px 30px 10px;
+.company-information-wrapper {
+  display: flex;
+  justify-content: space-between;
+  min-height: 510px;
+}
+
+.about-company  {
+  display: flex;
+  flex-direction: column;
+  width: 510px;
+  min-height: 370px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  wdth: 300ppx;
+  min-height: 370px;
+}
+
+.contacts img {
+  margin-top: 10px;
+}
+
+.about-company-description span {
+  font-weight: bold;
+}
+
+.company-btn {
+  margin-top: 30px;
+  padding: 10px;
+  width: 220px;
   font-size: 14px;
+  text-align: center;
+  background-color: #EF3644;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.company-contacts-btn {
+  margin-top: 50px;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
   background-color: #EF3644;
   border-radius: 5px;
   text-transform: uppercase;
